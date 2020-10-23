@@ -2,9 +2,9 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   counter = 0 
   while counter < collection.length 
-    if collection[counter]
-      
-   end
+    if collection[counter][:item] == name
+      return collection[counter]
+    end
     counter += 1 
   end
 end
